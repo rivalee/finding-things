@@ -1,0 +1,118 @@
+// Import GOV.UK elements, this will import the frontend toolkit and some base styles.
+// Take a look at elements.scss to see which files are imported.
+@import 'elements';
+
+// Take a look at patterns.scss to see which files are imported.
+@import 'patterns';
+
+// Set up your main content area <main id="content">
+// This will give you a full width content block
+// See elements _layout.scss line 7.
+
+// If you need it, set up your grid layout - refer to the grid layout usage example
+// See elements _layout.scss line 28.
+
+// If you need a phase banner, put this inside the main content area
+// See elements _layout.scss line 22.
+.phase-banner-alpha  {
+  @include phase-banner(alpha); // Change this to (beta) for a beta banner
+}
+.phase-tag-alpha {
+  @include phase-tag(alpha); // Change this to (beta) for a beta tag
+}
+
+// If you need to create a page as part of your journey, but without GOV.UK branding
+// See localhost:3000/examples/unbranded/
+.unbranded {
+  background: $white;
+  // Use the universal selector and !important to *ALWAYS OVERRIDE* GDS Transport
+  * {
+    font-family: Arial !important;
+  }
+  // Remove GOV.UK footer styles
+  #footer {
+    border: 0;
+    background: $white;
+  }
+}
+
+
+.head-container {
+    margin: 0 0 0 0;
+    background-color: #005ea5;
+    padding: 15px;
+    color: #fff;
+    height: 225px;
+}
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you,
+// either add and import new partial files, or modify those in GOV.UK elements to fit your user needs.
+
+// Related links
+// (These styles will be moved to GOV.UK elements, duplicating here for now.)
+.related-links {
+  margin-top: $gutter;
+  border-top: 10px solid $govuk-blue;
+  padding-top: 5px;
+
+  .heading-medium {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+
+.in-manual-search {
+    position: relative;
+    margin: 30px 0 15px;
+}
+
+.in-manual-search #search-box {
+    width: 86%;
+    width: calc(100% - 47px);
+    border: none;
+    padding: 6px;
+}
+
+.in-manual-search button {
+    background-size: 52.5px 35px;
+    background-position: 115% 50%;
+}
+
+
+.in-manual-search button {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #0b0c0c;
+    border-width: 0 0 0 1px;
+    border-left-color: #222;
+    overflow: hidden;
+    text-indent: -5000px;
+    cursor: pointer;
+    color: #fff;
+    background: #0b0c0c url(https://assets.digital.cabinet-office.gov.uk/manuals-frontend/search-button-4d67fecb1b50e27865977626e367ac67.png) no-repeat 0 50%;
+    position: absolute;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.in-manual-search #search-box {
+    width: 66%;
+    border: none;
+    padding: 6px;
+}
+
+.in-manual-search label {
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+
+  .topic-list ul li {
+    font-size: 24px;
+
+  }
