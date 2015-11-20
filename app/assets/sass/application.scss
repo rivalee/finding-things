@@ -113,6 +113,30 @@
   }
 
   .topic-list ul li {
-    font-size: 24px;
-
+    font-size: 19px;
   }
+
+  .govuk-option-select, #finder-frontend .filter {
+      margin-bottom: 30px;
+  }
+  .js-enabled .govuk-option-select {
+      padding: 0 0 1px 0;
+  }
+  .govuk-option-select {
+      background-color: #dee0e2;
+      padding: 5px;
+  }
+
+  .option-select-label {
+      font-size: 19px;
+      line-height: 1.31579; }
+
+      .options-container {
+    max-height: 200px;
+}
+.govuk-option-select .options-container {
+    position: relative;
+    background-color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
