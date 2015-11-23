@@ -41,8 +41,6 @@
 </ul>
 
 </div>
-
-
 </div>
 </div>
 
@@ -80,19 +78,50 @@
 
 
   <div class="grid-row">
-
   <div class="column-third">
-    <p>Filters</p>
+
+
 
     <div class="govuk-option-select">
-  <button class="js-container-head" aria-expanded="false" aria-controls="case_type">
-    <div class="option-select-label">Case type</div>
+    <div class="container-head">
+      <label class="option-select-label" for="keywords">
+        Search
+      </label>
+    </div>
+    <input class="filter-field-text" type="text" name="q" id="keywords" value="" maxlength="200">
+  </div>
+      <div class="govuk-option-select">
+
+  <div class="container-head js-container-head">
+    <div class="option-select-label">Pricing options</div>
+  </div>
+  <div class="options-container">
+    <div class="js-auto-height-inner">
+
+        <label for="free-option">
+          <input name="free-option" value="True" id="free-option" type="checkbox" aria-controls="">
+          Free option available
+        </label>
+
+        <label for="trial-option">
+          <input name="trial-option" value="True" id="trial-option" type="checkbox" aria-controls="">
+          Trial option offereded
+        </label>
+
+    </div>
+  </div>
+</div>
+
+    <p><span class="bold-24">Filter by:</span></p>
+
+    <div class="govuk-option-select">
+    <div class="option-select-label">Publication type</div>
   <div class="js-selected-counter"></div></button>
   <div class="options-container" id="case_type">
     <div class="js-auto-height-inner">
       <label for="case_type-ca98-and-civil-cartels">
         <input name="case_type[]" value="ca98-and-civil-cartels" id="case_type-ca98-and-civil-cartels" type="checkbox" aria-controls="js-search-results-info">
-        CA98 and civil cartels
+        Statistics
         </label>
       <label for="case_type-criminal-cartels">
         <input name="case_type[]" value="criminal-cartels" id="case_type-criminal-cartels" type="checkbox" aria-controls="js-search-results-info">

@@ -1,9 +1,15 @@
+@import 'colours';
+
+@import '_option-select';
+
+
 // Import GOV.UK elements, this will import the frontend toolkit and some base styles.
 // Take a look at elements.scss to see which files are imported.
 @import 'elements';
 
 // Take a look at patterns.scss to see which files are imported.
 @import 'patterns';
+
 
 // Set up your main content area <main id="content">
 // This will give you a full width content block
@@ -116,27 +122,15 @@
     font-size: 19px;
   }
 
-  .govuk-option-select, #finder-frontend .filter {
-      margin-bottom: 30px;
-  }
-  .js-enabled .govuk-option-select {
-      padding: 0 0 1px 0;
-  }
-  .govuk-option-select {
-      background-color: #dee0e2;
-      padding: 5px;
-  }
-
-  .option-select-label {
-      font-size: 19px;
-      line-height: 1.31579; }
-
-      .options-container {
-    max-height: 200px;
+.js-enabled .govuk-option-select {
+ padding: 0 5px 5px 5px;
+ margin: 30px 0 30px 0;
 }
-.govuk-option-select .options-container {
-    position: relative;
-    background-color: #fff;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
+
+  .govuk-option-select .filter-field-text {
+    @include core-16;
+    @include box-sizing(border-box);
+    width: 100%;
+    padding: 5px;
+    border: 1px solid $border-colour;
+  }
