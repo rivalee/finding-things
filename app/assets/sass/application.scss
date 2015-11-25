@@ -81,7 +81,6 @@
 .in-manual-search #search-box {
     width: 86%;
     width: calc(100% - 47px);
-    border: none;
     padding: 6px;
 }
 
@@ -110,7 +109,7 @@
 
 .in-manual-search #search-box {
     width: 66%;
-    border: none;
+    border: 1px solid black;
     padding: 6px;
 }
 
@@ -127,6 +126,13 @@
   .topic-list a {
     text-decoration: none;
   }
+
+
+    .topic-list-b a {
+      text-decoration: none;
+      color: white;
+    }
+
 
 .js-enabled .govuk-option-select {
  padding: 0 5px 5px 5px;
@@ -198,4 +204,8 @@
     background: #005ea5;
     color: #fff;
     text-decoration: none;
+}
+
+.popular-list {
+margin-left: 200px;
 }
