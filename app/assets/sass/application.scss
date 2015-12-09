@@ -175,8 +175,10 @@
 
 .sibling-content {
   float: left;
-  width: 60%;
+  width: 50%;
   margin-left: 15px;
+  background: white;
+  margin-top: -40px;
 }
 .sibling-block {
   float: left;
@@ -189,11 +191,11 @@
 .sibling-block-2 {
   float: left;
   margin-left: -160px;
-  margin-top: -40px;
-  width: 20%;
+  margin-top: -55px;
+  width: 26%;
   height: 600px;
   background: white;
-  padding: 0px;
+  padding: 10px;
   border-right: 2px solid $grey-3;
   border-left: 2px solid $grey-3;
 }
