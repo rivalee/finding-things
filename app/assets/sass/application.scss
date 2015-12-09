@@ -121,6 +121,15 @@
     text-decoration: none;
   }
 
+  .services-list ul li {
+    font-size: 24px!important;
+    font-weight: bold;
+    margin-bottom: 15px;
+    }
+
+  .services-list a {
+    text-decoration: none;
+  }
 
     .topic-list-b a {
       text-decoration: none;
@@ -170,20 +179,20 @@
 }
 .sibling-block {
   float: left;
-  margin: 20px  30px 0 0px;
-  width: 17.5%;
+  margin: 0px  30px 0 0px;
+  width: 25%;
   height: 600px;
   border-right: 2px solid $grey-3;
 }
 
 .sibling-block li {
-  padding: 12px 30px 8px 15px;
+  padding: 0px 30px 8px 15px;
 }
 
 .sibling-block a {
   text-decoration: none;
   display: inline-block;
-  padding: 12px 30px 8px 15px;
+  padding: 10px 30px 15px 15px;
   line-height: 1.14286;
 
 }
@@ -212,7 +221,7 @@ margin-left: 200px;
 
 .links-block {
   margin-top: -150px;
-  margin-right: -100px;
+  margin-right: -400px;
   padding: 20px;
   width: 400px;
   float: right;
