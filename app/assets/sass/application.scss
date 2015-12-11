@@ -189,11 +189,13 @@
 }
 
 .sibling-block-2 {
+  position: relative;
+  z-index: 500;
   float: left;
   margin-left: -160px;
   margin-top: -55px;
   width: 26%;
-  height: 600px;
+  height: 650px;
   background: white;
   padding: 10px;
   border-right: 2px solid $grey-3;
@@ -209,6 +211,7 @@
   display: inline-block;
   padding: 10px 30px 15px 15px;
   line-height: 1.14286;
+  position: relative;
 }
 
 .sibling-block ul a:after {
@@ -228,16 +231,25 @@
 
 .sibling-block-2 a {
   text-decoration: none;
-  display: inline-block;
-  padding: 12px 30px 8px 15px;
+  display: block;
+  padding: 12px 30px 8px 20px;
   line-height: 1.14286;
+  position: relative;
+  margin-left: -20px;
+  margin-right: 8px;
+}
+
+.sibling-block-2 a:hover {
+  background: #dee0e2;
+  color: #005ea5;
 }
 
 .sibling-block-2 ul a:after {
   position: absolute;
   top: 50%;
   margin-top: -8px;
-  right: 10px;
+  margin-right: 12px;
+  right: 12px;
   float: right;
     content: "\203A";
 }
@@ -246,16 +258,19 @@
 
 .sibling-block ul li.active a, ul li.active a {
   display: inline-block;
-  padding: 12px 30px 8px 15px;
+  padding: 12px 30px 8px 20px;
     background: #005ea5;
     color: #fff;
     text-decoration: none;
 }
 
 .sibling-block-2 ul li.active a, ul li.active a {
-  display: inline-block;
+  position: relative;
+  display: block;
   padding: 12px 30px 8px 15px;
-
+  margin-left: -22px;
+  margin-right: 7px;
+  border-left: 15px solid #005ea5;
     background: #005ea5;
     color: #fff;
     text-decoration: none;
