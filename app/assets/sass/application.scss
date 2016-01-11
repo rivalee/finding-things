@@ -189,6 +189,15 @@
   margin-top: 0;
 }
 
+
+.sibling-content-3 {
+  float: left;
+  width: 66%;
+  margin-left: 0;
+  background: white;
+  margin-top: 0;
+}
+
 .sibling-block-rhs {
   float: right;
   margin: 0px  30px 0 0px;
@@ -197,6 +206,24 @@
   border-left: 2px solid $grey-3;
 }
 
+.sibling-block-top {
+  margin: 0px  0px 30px 0px;
+  width: 100%;
+  border-bottom: 2px solid $grey-3;
+  overflow: auto;
+  font-size: 110%;
+}
+.sibling-block-top-sec {
+  float: left;
+  width: 25%;
+  margin-right: 5%;
+}
+
+
+
+.sibling-block-top li {
+  padding: 0px 30px 8px 15px;
+}
 
 
 .sibling-block-rhs li {
@@ -344,5 +371,6 @@ margin-left: 200px;
 }
 
 .preamble {
+  width: 88%;
  margin: 10px 0 50px 0;
 }
