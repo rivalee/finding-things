@@ -143,6 +143,35 @@
 
 
 
+
+.content-wrapper {
+  overflow: auto;
+}
+
+.content-title {
+  vertical-align: top;
+  display: inline-block;
+  width: 33%;
+  clear: left;
+}
+
+.content-body {
+  vertical-align: top;
+  display: inline-block;
+  padding-top: 40px;
+  width: 66%;
+}
+
+.content-body p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.content-body a {
+
+}
+
+
 .js-enabled .govuk-option-select {
  padding: 0 5px 5px 5px;
  margin: 30px 0 30px 0;
@@ -164,6 +193,15 @@
     margin-bottom: 10px;
   }
 
+.flag-services {
+  margin-top: 32px;
+  font-size: 50px;
+  line-height: 120%;
+}
+
+.flag-services a {
+  text-decoration: underline;
+}
 
 //Show siblings on 3rd level//
 
@@ -226,8 +264,7 @@
   float: left;
   width: 30%;
   margin-right: 1%;
-  font-size: 150%;
-
+  font-size: 22px;
 }
 
 .sibling-block-top-sec {
