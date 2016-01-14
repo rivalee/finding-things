@@ -113,7 +113,8 @@
   }
 
   .topic-list ul li {
-    font-size: 19px!important;
+    font-size: 24px!important;
+    font-weight: bold;
     margin-bottom: 15px;
     }
 
@@ -274,6 +275,22 @@
   font-size: 120%;
 }
 
+.views-block {
+  margin: -10px 0 30px 0;
+  padding-bottom: 25px;
+  border-bottom: 2px solid $grey-3;
+}
+
+.views-block li {
+ display: inline-block;
+ margin-right: 50px;
+ font-size: 24px;
+ text-decoration: none;
+}
+
+.views-block a {
+  text-decoration: none;
+}
 
 
 .sib {
