@@ -152,15 +152,16 @@
 .content-title {
   vertical-align: top;
   display: inline-block;
-  width: 33%;
+  width: 32%;
   clear: left;
+  margin-right: 20px;
 }
 
 .content-body {
   vertical-align: top;
   display: inline-block;
   padding-top: 40px;
-  width: 66%;
+  width: 60%;
 }
 
 .content-body p {
@@ -254,8 +255,8 @@
 
 .sibling-block-top {
   margin: 0px  0px 5px 0px;
-  padding: 40px;
-  background: $grey-3;
+  padding: 0px;
+  background: white;
   width: 100%;
   border-bottom: 0px solid $grey-3;
   overflow: auto;
@@ -273,6 +274,17 @@
   width: 30%;
   margin-right: 1%;
   font-size: 120%;
+}
+
+.show-all {
+  display: inline-block;
+  background: $grey-3;
+  padding: 10px 20px 10px 20px;
+}
+
+.show-all a {
+  font-weight: normal;
+  text-decoration: none;
 }
 
 .views-block {
