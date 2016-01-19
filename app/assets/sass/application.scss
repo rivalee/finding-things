@@ -166,7 +166,6 @@
 
 .content-body p {
   font-size: 22px;
-  font-weight: bold;
 }
 
 .content-body a {
@@ -254,25 +253,20 @@
 }
 
 .sibling-block-top {
-  margin: 0px  0px 5px 0px;
-  padding: 0px;
-  background: white;
+  margin: 0px  0px 10px 0px;
+  padding: 0px 5px 0 0;
   width: 100%;
   border-bottom: 0px solid $grey-3;
   overflow: auto;
+
 }
 
-.sibling-block-top-sec-2 {
-  float: left;
-  width: 30%;
-  margin-right: 1%;
-  font-size: 22px;
-}
+
 
 .sibling-block-top-sec {
   float: left;
   width: 30%;
-  margin-right: 1%;
+  margin-right: 3%;
   font-size: 120%;
 }
 
