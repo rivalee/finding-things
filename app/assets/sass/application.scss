@@ -157,6 +157,10 @@
   margin-right: 20px;
 }
 
+.content-title a {
+  text-decoration: none;
+}
+
 .content-body {
   vertical-align: top;
   display: inline-block;
@@ -169,7 +173,11 @@
 }
 
 .content-body a {
+}
 
+.content-body li {
+  font-size: 22px;
+  line-height: 200%;
 }
 
 
@@ -297,6 +305,7 @@
 .views-block a {
   text-decoration: none;
 }
+
 
 
 .sib {
