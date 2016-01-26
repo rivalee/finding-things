@@ -484,7 +484,18 @@ margin-left: 200px;
   margin-top: -26px;
 }
 
-
+.pub-list li {
+  border-bottom: 1px solid $grey-3;
+  padding: 10px 0 10px 10px;
+  font-weight: bold;
+}
+.pub-list a {
+  text-decoration: none;
+}
+.meta {
+font-weight: normal;
+  font-size: 16px;
+}
 .pub-subscribe {
   padding-bottom: 20px;
   font-size: 130%;
