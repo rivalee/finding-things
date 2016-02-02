@@ -165,6 +165,7 @@
   vertical-align: top;
   display: inline-block;
   padding-top: 40px;
+  padding-bottom: 20px;
   width: 60%;
 }
 
@@ -173,6 +174,7 @@
 }
 
 .content-body a {
+  text-decoration: none;
 }
 
 .content-body li {
@@ -292,17 +294,18 @@
 .views-block {
   display: inline-block;
   height: 100%;
-  margin: 10px 40px 50px 0;
-  padding-bottom: 25px;
-  border-right: 2px solid $grey-3;
-  float: left;
+  margin: 10px 0px 50px 0;
+  padding-bottom: 0px;
+  border-bottom: 3px solid $grey-3;
 }
 
 .views-block li {
- margin: 0px;
- padding-bottom: 20px;
- font-size: 24px;
+ margin-right: 45px;
+ padding-bottom: 10px;
+ font-size: 26px;
  text-decoration: none;
+ display: inline-block;
+
 }
 
 .views-block a {
@@ -561,4 +564,22 @@ font-weight: normal;
     height: 50px;
     width: 50px;
     overflow: visible;
+}
+
+.feature {
+  font-size: 26px;
+}
+
+.feature a {
+  text-decoration: none;
+}
+
+.selected {
+  background: $grey-3;
+  padding: 11px;
+}
+
+.deselected {
+  padding: 11px;
+
 }
