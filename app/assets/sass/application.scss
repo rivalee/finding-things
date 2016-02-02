@@ -217,10 +217,32 @@
 //Show siblings on 3rd level//
 
 .sibling-container {
-	overflow: auto;
-	width: 100%
+	overflow: visible;
 }
 
+
+.s-left {
+  width: 60%;
+  float: left;
+}
+
+.s-right {
+  margin-top: -100px;
+  float: right;
+  width: 33%;
+  padding: 22px;
+  overflow: visible !important;
+}
+
+.s-right a {
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.s-right li {
+  margin-bottom: 15px;
+  text-align: left;
+}
 
 .sibling-content {
   float: left;
@@ -293,7 +315,7 @@
 
 .views-block {
   display: inline-block;
-  height: 100%;
+  width: 100%;
   margin: 10px 0px 50px 0;
   padding-bottom: 0px;
   border-bottom: 3px solid $grey-3;
@@ -302,7 +324,7 @@
 .views-block li {
  margin-right: 45px;
  padding-bottom: 10px;
- font-size: 26px;
+ font-size: 24px;
  text-decoration: none;
  display: inline-block;
 
@@ -515,7 +537,7 @@ font-weight: normal;
 
 .search-header {
     padding: 20px 0 30px;
-    width: 66.666%;
+    width: 90%;
     display: inline-block;
 }
 
