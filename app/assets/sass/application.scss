@@ -227,13 +227,17 @@
 }
 
 .s-right {
-  margin-top: -100px;
+  margin-top: -50px;
   float: right;
   width: 33%;
-  padding: 22px;
+  padding: 24px;
   overflow: visible !important;
 }
 
+.td-none {
+  text-decoration: none;
+
+}
 .s-right a {
   font-size: 19px;
   text-decoration: none;
