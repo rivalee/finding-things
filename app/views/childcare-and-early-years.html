@@ -5,227 +5,178 @@
 {{$content}}
 
 <main id="content" role="main">
-
   <div id="global-breadcrumb">
     <ol>
-      <li><a href="http://www.gov.uk">Home</a></li>
-      <li><a href="education">Education</a></li>
+      <li><a href="http://www.gov.uk">Home</a>
+      </li>
+      <li><a href="education">Education</a>
+      </li>
       <li>Childcare and early years</li>
-
     </ol>
   </div>
-
 
   <h1 class="heading-xlarge"></h1>
   <span class="font-small"><a href="education"><!--&#139;-->&#8624;		 Back to Education</a></span>
 
+  <div class="sibling-container">
 
-<div class="sibling-container">
-  <div class="s-left">
-
-
+    <div class="s-left">
       <h2 class="heading-xlarge">Childcare and early years</h2>
-
       <div class="preamble">
-      <p><span class="font-medium">Find services for childcare, and read guidance, policies and other publications</span></div>
+        <p><span class="font-medium">Find services for childcare, and read guidance, policies and other publications</span>
+      </div>
 
-
-
-
-        <div class="search-header">
-              <div class="searchfield">
-            <input type="search" name="q" value="" id="search-main">
-            <button type="submit" class="button">Search</button>
+      <div class="search-header">
+        <div class="searchfield">
+          <input type="search" name="q" value="" id="search-main">
+          <button type="submit" class="button">Search</button>
         </div>
-          </div>
-
+      </div>
     </div>
 
+    <div class="s-right">
+      <ul>
+        <li><a href="early-years-settings">Early years settings</a> </li>
+        <li><a href="nurseries">Early years foundation stage (EYFS) </a> </li>
+        <li><a href="childrenscentres">Special educational needs and disabilities (SEND) </a> </li>
+        <li><a href="#">Training for early years staff</a> </li>
+        <li><a href="nurseries">Inspections </a> </li>
+        <li><a href="childrenscentres">Early years pupil premium </a> </li>
+        <li><a href="nurseries">Childcare costs  </a> </li>
+        <li><a href="childrenscentres">Funding</a> </li>
+      </ul>
+    </div>
+  </div>
 
-  <div class="s-right">
+  <div class="views-block">
     <ul>
-     <li><a href="early-years-settings">Early years settings</a></li>
-        <li><a href="nurseries">Early years foundation stage (EYFS) </a></li>
-        <li><a href="childrenscentres">Special educational needs and disabilities (SEND) </a></li>
-        <li><a href="#">Training for early years staff</a></li>
-        <li><a href="nurseries">Inspections </a></li>
-        <li><a href="childrenscentres">Early years pupil premium </a></li>
-        <li><a href="nurseries">Childcare costs  </a></li>
-        <li><a href="childrenscentres">Funding</a></li></div>
-</li>
-</div>
-
-
-
-<div class="views-block">
-  <ul>
-    <li class="selected">Guidance</li>
-    <li class="deselected"><a href="childcare-and-early-years?section=detailed">Detailed guidance</a></li>
-    <li class="deselected"><a href="childcare-and-early-years?section=policy">Policy</a></li>
-    <li class="deselected"><a href="childcare-and-early-years?section=publications">All content</a></li>
-</div>
-
-
-<div class="content-wrapper feature">
-  <p><a href="#">Find free early education and childcare</a></p>
-  <p><a href="#">Help paying for childcare</a></p>
-  <p><a href="#">Pay your registration and annual fee to Ofsted</a></p>
-</div>
-
-<div class="content-wrapper">
-  <div class="content-title">
-
-    <h2 class="heading-medium"><a href="early-years-settings3">Early years settings</a></h2>
+      <li class="selected">Guidance</li>
+      <li class="deselected"><a href="childcare-and-early-years?section=detailed">Detailed guidance</a></li>
+      <li class="deselected"><a href="childcare-and-early-years?section=policy">Policy</a></li>
+      <li class="deselected"><a href="childcare-and-early-years?section=publications">All content</a></li>
+    </ul>
   </div>
-  <div class="content-body">
-    <p><a href="#">Find a registered childminder</a>
-    <p><a href="#">Search Ofsted registered providers and inspection reports</a></p>
-    <p><a href="#">Guidance for childminding</a></p>
-    <p class="show-all"><a href="early_years-settings">View more</a></p>
 
-
-
+  <div class="content-wrapper feature">
+    {{#taggedItems}}
+      <p><a href="https://www.gov.uk{{base_path}}">{{title}}</a></p>
+    {{/taggedItems}}
   </div>
-</div>
 
+  <div class="content-wrapper">
+    <div class="content-title">
+      <h2 class="heading-medium">
+        <a href="early-years-settings3">Early years settings</a>
+      </h2>
+    </div>
 
-
-<div class="content-wrapper">
-  <div class="content-title">
-
-    <h2 class="heading-medium"><a href="#">Early years foundation stage (EYS)</a></h2>
+    <div class="content-body">
+      <p><a href="#">Find a registered childminder</a></p>
+      <p><a href="#">Search Ofsted registered providers and inspection reports</a></p>
+      <p><a href="#">Guidance for childminding</a></p>
+      <p class="show-all"><a href="early_years-settings">View more</a></p>
+    </div>
   </div>
-  <div class="content-body">
-    <p><a href="#">Find a nursery</a></p>
-    <p><a href="#">Enrol a child</a></p>
-    <p><a href="#">Guidance for nurseries</a></p>
 
-    <p class="show-all"><a href="#">View more</a></p>
+  <div class="content-wrapper">
+    <div class="content-title">
+      <h2 class="heading-medium">
+        <a href="#">Early years foundation stage (EYS)</a>
+      </h2>
+    </div>
+    <div class="content-body">
+      <p><a href="#">Find a nursery</a> </p>
+      <p><a href="#">Enrol a child</a> </p>
+      <p><a href="#">Guidance for nurseries</a> </p>
+      <p class="show-all"><a href="#">View more</a> </p>
+    </div>
   </div>
-</div>
 
+  <div class="content-wrapper">
+    <div class="content-title">
+      <h2 class="heading-medium"><a href="#">Special educational needs and disabilities (SEND)</a></h2>
+    </div>
 
-<div class="content-wrapper">
-  <div class="content-title">
-
-    <h2 class="heading-medium"><a href="#">Special educational needs and disabilities (SEND)</a></h2>
+    <div class="content-body">
+      <p><a href="#">Find a Sure Start children's centre</a> </p>
+      <p><a href="#">Sure Start maternity grant</a> </p>
+      <p><a href="#">Complain about a school or childminder</a> </p>
+      <p class="show-all"><a href="#">View more</a> </p>
+    </div>
   </div>
-  <div class="content-body">
-    <p><a href="#">Find a Sure Start children's centre</a></p>
-    <p><a href="#">Sure Start maternity grant</a></p>
-    <p><a href="#">Complain about a school or childminder</a></p>
 
-    <p class="show-all"><a href="#">View more</a></p>
-
-
+  <div class="content-wrapper">
+    <div class="content-title">
+      <h2 class="heading-medium"><a href="#">Training for early years staff</a></h2>
+    </div>
+    <div class="content-body">
+      <p><a href="#">Find a nursery</a> </p>
+      <p><a href="#">Enrol a child</a> </p>
+      <p><a href="#">Guidance for nurseries</a> </p>
+      <p class="show-all"><a href="#">View more</a> </p>
+    </div>
   </div>
-</div>
 
-
-<div class="content-wrapper">
-  <div class="content-title">
-
-    <h2 class="heading-medium"><a href="#">Training for early years staff</a></h2>
+  <div class="content-wrapper">
+    <div class="content-title">
+      <h2 class="heading-medium"><a href="#">Inspections</a></h2>
+    </div>
+    <div class="content-body">
+      <p><a href="#">Find a nursery</a> </p>
+      <p><a href="#">Enrol a child</a> </p>
+      <p><a href="#">Guidance for nurseries</a> </p>
+      <p class="show-all"><a href="#">View more</a> </p>
+    </div>
   </div>
-  <div class="content-body">
-    <p><a href="#">Find a nursery</a></p>
-    <p><a href="#">Enrol a child</a></p>
-    <p><a href="#">Guidance for nurseries</a></p>
 
-    <p class="show-all"><a href="#">View more</a></p>
-
-
+  <div class="content-wrapper">
+    <div class="content-title">
+      <h2 class="heading-medium"><a href="#">Early years pupil premium</a></h2>
+    </div>
+    <div class="content-body">
+      <p><a href="#">Find a nursery</a> </p>
+      <p><a href="#">Enrol a child</a> </p>
+      <p><a href="#">Guidance for nurseries</a> </p>
+      <p class="show-all"><a href="#">View more</a> </p>
+    </div>
   </div>
-</div>
 
-<div class="content-wrapper">
-  <div class="content-title">
+  <div class="content-wrapper">
+    <div class="content-title">
+      <h2 class="heading-medium"><a href="#">Early years foundation stage (EYS)</a></h2>
+    </div>
 
-    <h2 class="heading-medium"><a href="#">Inspections</a></h2>
+    <div class="content-body">
+      <p><a href="#">Find a nursery</a> </p>
+      <p><a href="#">Enrol a child</a> </p>
+      <p><a href="#">Guidance for nurseries</a> </p>
+      <p class="show-all"><a href="#">View more</a> </p>
+    </div>
   </div>
-  <div class="content-body">
-    <p><a href="#">Find a nursery</a></p>
-    <p><a href="#">Enrol a child</a></p>
-    <p><a href="#">Guidance for nurseries</a></p>
 
-    <p class="show-all"><a href="#">View more</a></p>
-
-
+  <div class="content-wrapper">
+    <div class="content-title">
+      <h2 class="heading-medium"><a href="#">Childcare costs</a></h2>
+    </div>
+    <div class="content-body">
+      <p><a href="#">Find a nursery</a> </p>
+      <p><a href="#">Enrol a child</a> </p>
+      <p><a href="#">Guidance for nurseries</a> </p>
+      <p class="show-all"><a href="#">View more</a> </p>
+    </div>
   </div>
-</div>
 
-<div class="content-wrapper">
-  <div class="content-title">
-
-    <h2 class="heading-medium"><a href="#">Early years pupil premium</a></h2>
+  <div class="content-wrapper">
+    <div class="content-title">
+      <h2 class="heading-medium"><a href="#">Funding</a></h2>
+    </div>
+    <div class="content-body">
+      <p><a href="#">Find a nursery</a> </p>
+      <p><a href="#">Enrol a child</a> </p>
+      <p><a href="#">Guidance for nurseries</a> </p>
+      <p class="show-all"><a href="#">View more</a> </p>
+    </div>
   </div>
-  <div class="content-body">
-    <p><a href="#">Find a nursery</a></p>
-    <p><a href="#">Enrol a child</a></p>
-    <p><a href="#">Guidance for nurseries</a></p>
-
-    <p class="show-all"><a href="#">View more</a></p>
-
-
-  </div>
-</div>
-
-<div class="content-wrapper">
-  <div class="content-title">
-
-    <h2 class="heading-medium"><a href="#">Early years foundation stage (EYS)</a></h2>
-  </div>
-  <div class="content-body">
-    <p><a href="#">Find a nursery</a></p>
-    <p><a href="#">Enrol a child</a></p>
-    <p><a href="#">Guidance for nurseries</a></p>
-
-    <p class="show-all"><a href="#">View more</a></p>
-
-
-  </div>
-</div>
-
-<div class="content-wrapper">
-  <div class="content-title">
-
-    <h2 class="heading-medium"><a href="#">Childcare costs</a></h2>
-  </div>
-  <div class="content-body">
-    <p><a href="#">Find a nursery</a></p>
-    <p><a href="#">Enrol a child</a></p>
-    <p><a href="#">Guidance for nurseries</a></p>
-
-    <p class="show-all"><a href="#">View more</a></p>
-
-
-  </div>
-</div>
-
-<div class="content-wrapper">
-  <div class="content-title">
-
-    <h2 class="heading-medium"><a href="#">Funding</a></h2>
-  </div>
-  <div class="content-body">
-    <p><a href="#">Find a nursery</a></p>
-    <p><a href="#">Enrol a child</a></p>
-    <p><a href="#">Guidance for nurseries</a></p>
-
-    <p class="show-all"><a href="#">View more</a></p>
-
-
-  </div>
-</div>
-
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
-
 </main>
 
 {{/content}}
