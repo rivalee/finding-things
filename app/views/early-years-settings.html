@@ -1,6 +1,6 @@
 {{<layout}}
 
-{{$pageTitle}}Childcare and early years{{/pageTitle}}
+{{$pageTitle}}Early years settings{{/pageTitle}}
 
 {{$content}}
 
@@ -11,121 +11,92 @@
       <li><a href="http://www.gov.uk">Home</a></li>
       <li><a href="education">Education</a></li>
       <li>Childcare and early years</li>
-
     </ol>
   </div>
-
 
   <h1 class="heading-xlarge"></h1>
   <span class="font-small"><a class="td-none" href="childcare-and-early-years"><!--&#139;-->&#8624;	 Back to Childcare and early years</a></span>
 
-
-<div class="sibling-container">
-  <div class="s-left">
-
-
+  <div class="sibling-container">
+    <div class="s-left">
       <h2 class="heading-xlarge">Early years settings</h2>
 
       <div class="preamble">
-      <p><span class="font-medium">Find services for early years settings, and read guidance, policies and other publications</span></div>
+        <p><span class="font-medium">Find services for early years settings, and read guidance, policies and other publications</span>
+      </div>
 
-
-
-
-        <div class="search-header">
-              <div class="searchfield">
-            <input type="search" name="q" value="" id="search-main">
-            <button type="submit" class="button">Search</button>
+      <div class="search-header">
+        <div class="searchfield">
+          <input type="search" name="q" value="" id="search-main">
+          <button type="submit" class="button">Search</button>
         </div>
-          </div>
-
+      </div>
     </div>
 
-
-  <div class="s-right">
-    <ul>
-     <li><a href="childminders">Childminders</a></li>
+    <div class="s-right">
+      <ul>
+       <li><a href="childminders">Childminders</a></li>
         <li><a href="nurseries">Nurseries</a></li>
         <li><a href="childrenscentres">Children's centres </a></li>
-</li>
-</div>
+      </ul>
+    </div>
 
+    <div class="views-block">
+      <ul>
+        <li class="selected">Guidance</li>
+        <li class="deselected"><a href="#">Detailed guidance</a></li>
+        <li class="deselected"><a href="#">Policy</a></li>
+        <li class="deselected"><a href="#">All content</a></li>
+    </div>
 
+    <div class="content-wrapper feature">
+      {{#taggedItems}}
+        <p><a href="https://www.gov.uk{{base_path}}">{{title}}</a></p>
+      {{/taggedItems}}
+    </div>
 
-<div class="views-block">
-  <ul>
-    <li class="selected">Guidance</li>
-    <li class="deselected"><a href="#">Detailed guidance</a></li>
-    <li class="deselected"><a href="#">Policy</a></li>
-    <li class="deselected"><a href="#">All content</a></li>
-</div>
+    <div class="content-wrapper">
+      <div class="content-title">
+        <h2 class="heading-medium"><a href="childminders">Childminding</a></h2>
+        <p class="font-medium">Services and guidance for childminding</p>
+      </div>
 
+      <div class="content-body">
+        <p><a href="#">Find a registered childminder</a></p>
+        <p><a href="#">Search Ofsted registered providers and inspection reports</a></p>
+        <p><a href="#">Show all content for childminding</a></p>
+        <p class="show-all"><a href="#">See more about childminding</a></p>
+      </div>
+    </div>
 
+    <div class="content-wrapper">
+      <div class="content-title">
+        <h2 class="heading-medium"><a href="#">Nurseries</a></h2>
+        <p class="font-medium">Services and guidance for nurseries</p>
+      </div>
 
-<div class="content-wrapper">
-  <div class="content-title">
+      <div class="content-body">
+        <p><a href="#">Find a nursery</a></p>
+        <p><a href="#">Enrol a child</a></p>
+        <p><a href="#">Guidance for nurseries</a></p>
+        <p class="show-all"><a href="#">See more about nurseries</a></p>
+      </div>
+    </div>
 
-    <h2 class="heading-medium"><a href="childminders">Childminding</a></h2>
-<p class="font-medium">Services and guidance for childminding</p>
+    <div class="content-wrapper">
+      <div class="content-title">
+        <h2 class="heading-medium"><a href="#">Children's centres</a></h2>
+        <p class="font-medium">Services and guidance for nurseries</p>
+      </div>
+
+      <div class="content-body">
+        <p><a href="#">Find a Sure Start children's centre</a></p>
+        <p><a href="#">Sure Start maternity grant</a></p>
+        <p><a href="#">Complain about a school or childminder</a></p>
+        <p class="show-all"><a href="#">See more about children's centres</a></p>
+      </div>
+    </div>
   </div>
-  <div class="content-body">
-  <p><a href="#">Find a registered childminder</a>
-
-<p><a href="#">Search Ofsted registered providers and inspection reports</a></p>
-<p><a href="#">Show all content for childminding</a></p>
-<p class="show-all"><a href="#">See more about childminding</a></p>
-
-
-
-  </div>
-</div>
-
-
-
-<div class="content-wrapper">
-  <div class="content-title">
-
-    <h2 class="heading-medium"><a href="#">Nurseries</a></h2>
-    <p class="font-medium">Services and guidance for nurseries</p>
-  </div>
-  <div class="content-body">
-    <p><a href="#">Find a nursery</a></p>
-    <p><a href="#">Enrol a child</a></p>
-    <p><a href="#">Guidance for nurseries</a></p>
-
-    <p class="show-all"><a href="#">See more about nurseries</a></p>
-
-
-  </div>
-</div>
-
-
-<div class="content-wrapper">
-  <div class="content-title">
-
-    <h2 class="heading-medium"><a href="#">Children's centres</a></h2>
-    <p class="font-medium">Services and guidance for nurseries</p>
-  </div>
-  <div class="content-body">
-    <p><a href="#">Find a Sure Start children's centre</a></p>
-    <p><a href="#">Sure Start maternity grant</a></p>
-    <p><a href="#">Complain about a school or childminder</a></p>
-
-    <p class="show-all"><a href="#">See more about children's centres</a></p>
-
-
-  </div>
-</div>
-
-
-
-
-
-</div>
-</div>
-</div>
-</div>
-
 </main>
 
 {{/content}}
