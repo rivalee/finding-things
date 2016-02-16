@@ -35,9 +35,9 @@
 
     <div class="s-right">
       <ul>
-       <li><a href="childminders">Childminders</a></li>
-        <li><a href="nurseries">Nurseries</a></li>
-        <li><a href="childrenscentres">Children's centres </a></li>
+        {{#childTaxons}}
+          <li><a href="{{localHref}}">{{title}}</a></li>
+        {{/childTaxons}}
       </ul>
     </div>
 

@@ -34,15 +34,9 @@
 
     <div class="s-right">
       <ul>
-        <li><a href="#">Further education</a></li>
-        <li><a href="#">Schools</a></li>
-        <li><a href="childcare-and-early-years">Childcare and early years</a></li>
-        <li><a href="#">Special educational needs and disabilities (SEND)</a></li>
-        <li><a href="#">Training for early years staff</a></li>
-        <li><a href="#">Inspections</a></li>
-        <li><a href="#">Early years pupil premium</a></li>
-        <li><a href="#">Childcare costs</a></li>
-        <li><a href="#">Funding</a></li>
+        {{#childTaxons}}
+          <li><a href="{{localHref}}">{{title}}</a></li>
+        {{/childTaxons}}
       </ul>
     </div>
 
