@@ -70,4 +70,37 @@ router.get('/childminders', function (req, res) {
 });
 // ****************** Education Routes END ******************
 
+// ****************** Driving Routes BEGIN ******************
+router.get('/driving-and-vehicles', function (req, res) {
+  var taxonSlug = "driving-and-vehicles";
+
+  var taggedItems = taxonHelpers.fetchTaggedItems(taxonSlug);
+  var guidanceItemsOnly = taxonHelpers.filterOutGuidance(taggedItems);
+  var childTaxons = taxonHelpers.fetchChildTaxons(taxonSlug);
+
+  res.render('driving-and-vehicles', {taggedItems: guidanceItemsOnly, childTaxons: childTaxons});
+});
+
+router.get('/driving-and-vehicle-businesses', function (req, res) {
+  var taxonSlug = "driving-and-vehicle-businesses";
+
+  var taggedItems = taxonHelpers.fetchTaggedItems(taxonSlug);
+  var guidanceItemsOnly = taxonHelpers.filterOutGuidance(taggedItems);
+  var childTaxons = taxonHelpers.fetchChildTaxons(taxonSlug);
+
+  if ( req.query.section === 'detailed' ) {
+    res.render('driving-and-vehicle-businesses_detailed', {childTaxons: childTaxons});
+  }
+  else if ( req.query.section === 'policy' ) {
+    res.render('driving-and-vehicle-businesses_policy', {childTaxons: childTaxons});
+  }
+  else if ( req.query.section === 'publications' ) {
+    res.render('driving-and-vehicle-businesses_publications', {taggedItems: taggedItems, childTaxons: childTaxons});
+  }
+  else {
+    res.render('driving-and-vehicle-businesses', {taggedItems: guidanceItemsOnly, childTaxons: childTaxons});
+  }
+  var taxonSlug = "driving-and-vehicle-businesses";
+});
+// ****************** Driving Routes END ******************
 module.exports = router;

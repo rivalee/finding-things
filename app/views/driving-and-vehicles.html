@@ -1,0 +1,74 @@
+{{<layout}}
+
+{{$pageTitle}}Driving and Vehicles{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+  <div id="global-breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="education">Driving and Vehicles</a></li>
+    </ol>
+  </div>
+
+  <h1 class="heading-xlarge"></h1>
+
+  <div class="sibling-container">
+    <div class="s-left">
+      <h2 class="heading-xlarge">Driving and Vehicles</h2>
+
+      <div class="preamble">
+        <p><span class="font-large">Guidance and services of the vehicular persuasion</span>
+      </div>
+
+      <div class="search-header">
+        <div class="searchfield">
+          <input type="search" name="q" value="" id="search-main">
+          <button type="submit" class="button">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="s-right">
+      <ul>
+        {{#childTaxons}}
+          <li><a href="{{localHref}}">{{title}}</a></li>
+        {{/childTaxons}}
+      </ul>
+    </div>
+
+    <div class="views-block">
+      <ul>
+        <li class="selected">Guidance</li>
+        <li class="deselected"><a href="#">Detailed guidance</a></li>
+        <li class="deselected"><a href="#">Policy</a></li>
+        <li class="deselected"><a href="#">All content</a></li>
+      </ul>
+    </div>
+
+    <div class="content-wrapper feature">
+      {{#taggedItems}}
+        <p><a href="https://www.gov.uk{{base_path}}">{{title}}</a></p>
+      {{/taggedItems}}
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-title">
+        <h2 class="heading-medium"><a href="#">Driving and vehicle businesses</a></h2>
+      </div>
+
+      <div class="content-body">
+        <p><a href="#">Subtopic</a></p>
+        <p><a href="#">Subtopic</a></p>
+        <p><a href="#">Subtopic</a></p>
+        <p class="show-all"><a href="#">View more</a></p>
+      </div>
+    </div>
+  </div>
+</main>
+
+{{/content}}
+
+{{/layout}}

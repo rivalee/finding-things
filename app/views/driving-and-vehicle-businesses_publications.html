@@ -1,0 +1,123 @@
+{{<layout}}
+
+{{$pageTitle}}Driving and vehicle businesses{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+  <div id="global-breadcrumb">
+    <ol>
+      <li><a href="http://www.gov.uk">Home</a>
+      </li>
+      <li><a href="driving-and-vehicles">Driving and vehicles</a>
+      </li>
+      <li>Driving and vehicle businesses</li>
+    </ol>
+  </div>
+
+  <h1 class="heading-xlarge"></h1>
+  <span class="font-small"><a href="driving-and-vehicles"><!--&#139;-->&#8624;		 Back to Driving and vehicles</a></span>
+
+  <div class="sibling-container">
+    <div class="s-left">
+      <h2 class="heading-xlarge">Driving and vehicle businesses</h2>
+      <div class="preamble">
+        <p><span class="font-medium">Find services for driving and vehicle businesses, and read guidance, policies and other publications</span>
+      </div>
+
+      <div class="search-header">
+        <div class="searchfield">
+          <input type="search" name="q" value="" id="search-main">
+          <button type="submit" class="button">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="s-right">
+      <ul>
+        {{#childTaxons}}
+          <li><a href="{{localHref}}">{{title}}</a></li>
+        {{/childTaxons}}
+      </ul>
+    </div>
+  </div>
+
+  <div class="views-block">
+    <ul>
+      <li class="selected">Guidance</li>
+      <li class="deselected"><a href="driving-and-vehicle-businesses?section=detailed">Detailed guidance</a></li>
+      <li class="deselected"><a href="driving-and-vehicle-businesses?section=policy">Policy</a></li>
+      <li class="deselected"><a href="driving-and-vehicle-businesses?section=publications">All content</a></li>
+    </ul>
+  </div>
+
+  <div class="content-wrapper">
+    <p class="heading-small pub-subscribe">
+      Follow new policy publications by <a href="#">email</a> or <a href="#">feed</a>
+    </p>
+
+    <div class="content-title">
+      <div class="govuk-option-select">
+        <div class="container-head">
+          <label class="option-select-label" for="keywords">
+            Search
+          </label>
+        </div>
+        <input class="filter-field-text" type="text" name="q" id="keywords" value="" maxlength="200">
+      </div>
+
+      <div class="govuk-option-select">
+        <div class="container-head js-container-head">
+          <div class="option-select-label">Publication type</div>
+        </div>
+
+        <div class="options-container">
+          <div class="js-auto-height-inner">
+            <label for="free-option">
+              <input name="free-option" value="True" id="free-option" type="checkbox" aria-controls="">
+              Consultations
+            </label>
+
+            <label for="trial-option">
+              <input name="trial-option" value="True" id="trial-option" type="checkbox" aria-controls="">
+             Corporate
+            </label>
+
+            <label for="free-option">
+              <input name="free-option" value="True" id="free-option" type="checkbox" aria-controls="">
+              Policy and guidance
+            </label>
+
+            <label for="trial-option">
+              <input name="trial-option" value="True" id="trial-option" type="checkbox" aria-controls="">
+             Other
+            </label>
+
+            <label for="trial-option">
+              <input name="trial-option" value="True" id="trial-option" type="checkbox" aria-controls="">
+              Research and statistics
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="pub-list">
+        <ul>
+          {{#taggedItems}}
+          <li>
+            <a href="https://www.gov.uk{{base_path}}">{{title}}</a> </br>
+            <span class="meta">Statistics</span>
+          </li>
+          {{/taggedItems}}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+{{/content}}
+
+{{/layout}}
