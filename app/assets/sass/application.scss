@@ -609,7 +609,28 @@ font-weight: normal;
   padding: 11px;
 }
 
+.footer-crumb {
+  background: $grey-4;
+  padding: 10px 0 20px 30px;
+  display: inline-block;
+  width: 100%;
+}
 
+.branch {
+  float: left;
+}
+
+.tree {
+  width: 80%;
+  float: right;
+  display: inline-block;
+}
+
+
+.footer-crumb-2 {
+  margin-left: 50px;
+  margin-top: 40px;
+}
 .content-title h2 {
   border-bottom: 0px solid $grey-2;
 }
