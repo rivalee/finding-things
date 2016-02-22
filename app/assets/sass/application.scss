@@ -609,27 +609,33 @@ font-weight: normal;
   padding: 11px;
 }
 
+.whole-crumb {
+  margin-top: 60px;
+  border-top: 2px solid $grey-3;
+}
+
 .footer-crumb {
-  background: $grey-4;
-  padding: 10px 0 20px 30px;
+  padding: 10px 0 10px 30px;
   display: inline-block;
   width: 100%;
 }
 
-.branch {
+.crumb-label {
+  display: inline-block;
+  width: 30%;
   float: left;
+  margin-top: 40px;
 }
 
-.tree {
-  width: 80%;
-  float: right;
+.crumb-content {
+  width: 60%;
+  margin-left: 10px;
   display: inline-block;
 }
 
 
 .footer-crumb-2 {
   margin-left: 50px;
-  margin-top: 40px;
 }
 .content-title h2 {
   border-bottom: 0px solid $grey-2;
